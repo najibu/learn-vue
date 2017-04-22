@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+  <style>
+    body { padding-top: 40px; }
+  </style>
+</head>
+<body>
+
+  <div id="root" class="container">
+    <modal v-if="showModal" @close="showModal = false">
+      <p>
+        We insert any text
+      </p>
+    </modal>
+
+    <button @click="showModal = true">Show Modal</button> 
+  </div>
+  
+
+  <script src="https://unpkg.com/vue@2.2.6"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
